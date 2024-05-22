@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/clima/static/css/main.74bff026.css",
+    "main.js": "/clima/static/js/main.9c1ac723.js",
+    "static/js/787.01f48bee.chunk.js": "/clima/static/js/787.01f48bee.chunk.js",
+    "static/media/8.jpg": "/clima/static/media/8.27241b25069033c31bf7.jpg",
+    "static/media/6.jpg": "/clima/static/media/6.f41364448c30fd2c6f33.jpg",
+    "static/media/3.jpg": "/clima/static/media/3.c4c94c9be2e0f1db85a2.jpg",
+    "static/media/4.jpg": "/clima/static/media/4.157db896a16f0a1e3212.jpg",
+    "static/media/1.jpg": "/clima/static/media/1.78140a4646d84e3865be.jpg",
+    "static/media/10.jpg": "/clima/static/media/10.24d66b629b27e1fe85be.jpg",
+    "static/media/7.jpg": "/clima/static/media/7.076c58eb5ebae3d599c6.jpg",
+    "static/media/5.jpg": "/clima/static/media/5.368b68e2d55018571c82.jpg",
+    "static/media/9.jpg": "/clima/static/media/9.1c15bff12fc1acc2428b.jpg",
+    "static/media/2.jpg": "/clima/static/media/2.402a471113a8a46dd596.jpg",
+    "index.html": "/clima/index.html",
+    "main.74bff026.css.map": "/clima/static/css/main.74bff026.css.map",
+    "main.9c1ac723.js.map": "/clima/static/js/main.9c1ac723.js.map",
+    "787.01f48bee.chunk.js.map": "/clima/static/js/787.01f48bee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74bff026.css",
+    "static/js/main.9c1ac723.js"
+  ]
+}
