@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: none;
+  background-image: url(./backgrounds/1.jpg);
+  object-fit: cover;
+  background-size: cover;
+  transition: background-image .1s ease;
+  
+}
+
+body::-webkit-scrollbar{
+  width: 15px;
+  transition: all 2s ease;
+}
+
+body::-webkit-scrollbar-track{
+  background: rgba(32, 111, 99, 0.239);
+}
+
+body::-webkit-scrollbar-thumb{
+  background: rgb(78, 175, 173);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: rgb(60, 238, 176);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.background1{
+  background-image: url(./backgrounds/1.jpg);
+}
+
+.background2{
+  background-image: url(./backgrounds/2.jpg);
+}
+
+.background3{
+  background-image: url(./backgrounds/3.jpg);
+}
+
+.background4{
+  background-image: url(./backgrounds/4.jpg);
+}
+
+.background5{
+  background-image: url(./backgrounds/5.jpg);
+}
+
+.background6{
+  background-image: url(./backgrounds/6.jpg);
+}
+
+.background7{
+  background-image: url(./backgrounds/7.jpg);
+}
+
+.background8{
+  background-image: url(./backgrounds/8.jpg);
+}
+
+.background9{
+  background-image: url(./backgrounds/9.jpg);
+}
+
+.background10{
+  background-image: url(./backgrounds/10.jpg);
+}
+
+
+@media  (max-width:1299px){
+
+  body{
+    min-height: 100vh;
+  }
+  
+  .background1 {
+    background-image: url(./backgrounds-movil/1.jpg);
+  }
+  
+  .background2 {
+    background-image: url(./backgrounds-movil/2.jpg);
+  }
+  
+  .background3 {
+    background-image: url(./backgrounds-movil/3.jpg);
+  }
+  
+  .background4 {
+    background-image: url(./backgrounds-movil/4.jpg);
+  }
+  
+  .background5 {
+    background-image: url(./backgrounds-movil/5.jpg);
+  }
+  
+  .background6 {
+    background-image: url(./backgrounds-movil/6.jpg);
+  }
+  
+  .background7 {
+    background-image: url(./backgrounds-movil/7.jpg);
+  }
+  
+  .background8 {
+    background-image: url(./backgrounds-movil/8.jpg);
+  }
+  
+  .background9 {
+    background-image: url(./backgrounds-movil/9.jpg);
+  }
+  
+  .background10 {
+    background-image: url(./backgrounds-movil/10.jpg);
+  }
+}

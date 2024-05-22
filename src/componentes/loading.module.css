@@ -1,0 +1,136 @@
+.loadingContainer {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgba(49, 189, 177, .3);
+    border-radius: 15px;
+    flex-direction: column;
+}
+  
+.loader{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: rotation 2s linear infinite;
+    background-image: url(../loaders-icons/icon-1.png);
+    transition: all 1.5 ease;
+}   
+  
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(358deg);
+    }
+}
+
+
+.iconCont{
+    display: none;
+}
+
+.icon1{
+    background-image: url(../loaders-icons/icon-1.png);
+}
+
+.icon2{
+    background-image: url(../loaders-icons/icon-2.png);
+}
+
+.icon3{
+    background-image: url(../loaders-icons/icon-3.png);
+}
+
+.icon4{
+    background-image: url(../loaders-icons/icon-4.png);
+}
+
+.icon5{
+    background-image: url(../loaders-icons/icon-5.png);
+}
+
+.icon6{
+    background-image: url(../loaders-icons/icon-6.png);
+}
+
+.icon7{
+    background-image: url(../loaders-icons/icon-7.png);
+}
+
+
+.loaderPoints {
+  margin-top: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #040404;
+  box-shadow: 32px 0 #fff, -32px 0 #fff;
+  position: relative;
+  animation: flash 0.5s ease-out infinite alternate;
+}
+
+@keyframes flash {
+    0% {
+        background-color: #FFF;
+        box-shadow: 32px 0 #FFF3, -32px 0 #FFF;
+        backdrop-filter: blur(10px);
+    }
+    50% {   
+        background-color: #FFF;
+        box-shadow: 32px 0 #FFF2, -32px 0 #FFF2;
+        backdrop-filter: blur(10px);
+    }
+    100% {
+        background-color: #FFF5;
+        box-shadow: 32px 0 #FFF, -32px 0 #FFF2;
+        backdrop-filter: blur(10px);
+    }
+}
+      
+
+@media (max-width: 719px){
+  
+    .loadingContainer{
+        width: 280px;
+        height: 400px;
+    }
+
+    .loaderPoints{
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+@media (min-width: 720px) and (max-width:1299px){
+
+    .loadingContainer{
+        width: 550px;
+        height: 680px;
+    }
+
+}
+
+
+@media (min-width: 1300px) and (max-width: 1919px){
+  
+    .loadingContainer{
+        width: 560px;
+        height: 540px;
+    }
+
+}
+
+@media (min-width: 1920px){
+    .loadingContainer{
+        width: 700px;
+        height: 800px;
+    }
+}
