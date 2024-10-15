@@ -1,55 +1,39 @@
 import { useState, useEffect } from "react";
-import styles from  './changeBackground.module.css';
-
+import styles from './changeBackground.module.css';
 
 export default function ChangeBackground({ callBackground }) {
     
     const [background, setBackground] = useState(1);
-
-    useEffect(() => {
-      callBackground();
-    }, [])
-
-      
-    function callBackground(){
+    
+    function handleCallBackground() {
         generateRandomBackground();
     }
     
     function generateRandomBackground() {
-       
         const numRandom = (Math.floor(Math.random() * 10) + 1);
         setBackground(numRandom);
-    
     }
 
-    function onChangeBackground() {
-        const body = document.querySelector('body');
-        
-        for (let i = 1; i <= 10; i++) {
-            body.classList.remove(`background${i}`);
-        }
-    
-        body.classList.add(`background${background}`);
-    }
+    useEffect(() => {
+        const onChangeBackground = () => {
+            const body = document.querySelector('body');
+            for (let i = 1; i <= 10; i++) {
+                body.classList.remove(`background${i}`);
+            }
+            body.classList.add(`background${background}`);
+        };
+
+        onChangeBackground();
+    }, [background]);
 
     useEffect(() => {
         const body = document.querySelector('body');
         body.style.transition = "background-image .5s ease";
     }, []);
 
-
-   
-    
-    useEffect(() => {
-        onChangeBackground();
-    }, [background]);
-    
-    
-   
-
     return (
         <div>
-            <button className={styles.button} onClick={callBackground}></button>
+            <button className={styles.button} onClick={handleCallBackground}></button>
             <div className={styles.containerBackgrounds}>
                 <div className={styles.background1}></div>
                 <div className={styles.background2}></div>
